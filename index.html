@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Xem phim, chương trình giải trí online</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+	<link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar">
+			<h1 class="font-bold" style="font-family: 'Poppins'; color: #E50914; margin-left: 2rem;">NOTFLEX</h1>
+			<div align="left">
+				<ul>
+					<li><a href="#">Trang chủ</a></li>
+					<li><a href="#">Series</a></li>
+					<li><a href="#">Phim</a></li>
+					<li><a href="#">Mới & phổ biến</a></li>
+					<li><a href="#">Danh sách của tôi</a></li>
+					<li><a href="#">Duyệt tìm theo ngôn ngữ</a></li>
+				</ul>
+			</div>
+			<div class="navbar-icons">
+			    <div class="noti-icon">
+			        <img src="notification-bell.png" alt="Noti">
+			    </div>
+			    <div class="user-icon">
+			        <img src="user-button.png" alt="User">
+			    </div>
+			    <div class="search-icon" onclick="toggleSearchBox()">
+			        <img src="search-button.png" alt="Search">
+			    </div>
+			    <input type="text" class="search-box" id="searchBox" placeholder="Tìm kiếm...">
+			</div>
+		</nav>
+
+		<div class="banner">
+			<img src="https://itswynnesworld.com/wp-content/uploads/2022/01/obs.webp">
+			<div class="banner-content">
+			    <img src="https://occ-0-8407-92.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABZ4zG6f2Wnu67lLxJ4HXFgOdFBEDo6f4zoviAldTVHDDdOl3fp2lAmWW_oAbtQKkzQ1taa_5sryE_Hi2Xf6k5JuxUYt4pua8W-B_6j6ep1VP.png?r=c9a" class="banner-logo">
+			    
+			    <div class="description">
+			        <p>Hai người yêu cũ bất đắc dĩ tái ngộ khi bộ phim tài liệu tuổi trẻ bất ngờ gây sốt. Từ những mâu thuẫn đến cảm xúc còn dang dở — liệu họ có viết tiếp chuyện tình chưa trọn?</p>
+			        
+			        <div class="banner-buttons">
+			            <button class="play-btn" onclick="openModal()">▶ Phát</button>
+                    	<button class="info-btn" onclick="window.location.href='https://motchillt.com/mua-he-yeu-dau-cua-chung-ta'">ℹ Thông tin chi tiết</button>
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+		<div class="recommended-section">
+		    <h2 class="font-bold" style="color: white;">Phim đề xuất</h2>
+		    <div class="recommended-movies">
+		        <div class="movie-card">
+		            <a href="https://motchillt.com/nhung-bac-si-tai-hoa-phan-1" target="_blank">
+			            <img src="https://www.wowweekend.vn/document_root/upload/articles/image/BrowseContent/LifeStyle/202107/Hospital%20Playlist/3.jpg" alt="Movie 1">
+			        </a>
+		        </div>
+		        <div class="movie-card">
+		        	<a href="https://motchillt.com/arcane-lien-minh-huyen-thoai-phan-1" target="_blank">
+		            	<img src="https://images.spiderum.com/sp-images/17c44040a61b11efb55e093e10ade9bd.png" alt="Movie 2">
+		            </a>
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://minhtuanmobile.com/uploads/blog/netflix-nha-hang-tua-de-cac-tap-cua-stranger-things-mua-5-241107100934.jpg" alt="Movie 3">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://inthislittlecorner.vn/wp-content/uploads/2022/12/review-phim-wednesday-addams-3-scaled-1.jpeg" alt="Movie 3">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL-7mMikwZ29o5fvdQ5RxVDgy3MuTnltGWUw&s" alt="Movie 3">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://resizing.flixster.com/ddjFWk2uxbNFbmBw9lPVjAVxcAc=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p28671415_b_h10_ab.jpg" alt="Movie 3">
+		        </div>
+		    </div>
+		</div>
+
+		<div class="recommended-section">
+		    <h2 class="font-bold" style="color: white;">Danh sách của tôi</h2>
+		    <div class="recommended-movies">
+		        <div class="movie-card">
+		            <img src="https://www.elle.vn/app/uploads/2025/02/10/637659/hinh-1-poster-phim-trauma-code.jpg" alt="Movie 1">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQAq131iXvuuMDz8uPqS1HOHoElKEim1MP_GaG6VvNZsKLssdrPFuEvCRX6hQW8Kja5Nx9yLPy28skC36ymTvXJBrHqMTtb5d547OokwGTReImZOMP61MzipTlUqqtIk26OC.jpg?r=612" alt="Movie 2">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://www.fahasa.com/blog/wp-content/uploads/2025/02/spy-family-dai-dien.jpg" alt="Movie 3">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdNN2tBWrbjhAqGBM8pmma3FRFu330RenSeA&s" alt="Movie 3">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://pic-bstarstatic.akamaized.net/ugc/f8a4704cc661015b54ae4e276b1437b0.jpg" alt="Movie 3">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABaXPdyEA39UDw1xJHn4wnVGwfzu_TLbet2Mp3e0eQsk6olceLUeSD34JPMio4-KX__bMUQpH-8FbhiRZgu3NuVpJUnsP91RTPg1_.jpg?r=eaa" alt="Movie 3">
+		        </div>
+		    </div>
+		</div>
+
+		<div class="recommended-section">
+		    <h2 class="font-bold" style="color: white;">Phim hot trong tuần</h2>
+		    <div class="recommended-movies">
+		        <div class="movie-card">
+		            <img src="https://www.elle.vn/app/uploads/2025/02/10/637659/hinh-1-poster-phim-trauma-code.jpg" alt="Movie 1">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://www.fahasa.com/blog/wp-content/uploads/2025/01/sakamoto-dai-dien.jpg" alt="Movie 2">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://phunuso.mediacdn.vn/603486343963435008/2024/4/21/photo-1-17136977863301501993265-1713698363139-1713698364221227383619.jpg" alt="Movie 3">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://kenh14cdn.com/203336854389633024/2024/4/8/photo-6-1712588555433325474239.jpg" alt="Movie 3">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://m.media-amazon.com/images/S/pv-target-images/75bb6f0721a505a35b3b51ab09aaaff1f20e4eda79f4a37fb8c399e3dcbeaa64.jpg" alt="Movie 3">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWt89za6DKhXAZI1Py23Uzcgkif4bbDRLNgw&s" alt="Movie 3">
+		        </div>
+		    </div>
+		</div>
+
+		<div class="recommended-section">
+		    <h2 class="font-bold" style="color: white;">Có thể bạn sẽ thích</h2>
+		    <div class="recommended-movies">
+		        <div class="movie-card">
+		            <img src="https://minhtuanmobile.com/uploads/blog/kimetsu-no-yaiba-ss3-cong-bo-thoi-gian-phat-song-tap-cuoi-230613013901.jpg" alt="Movie 1">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://cdn-images.vtv.vn/zoom/640_400/66349b6076cb4dee98746cf1/2024/09/25/https-3a-2f-2fsubstack-post-media-s3-amazonaws-com-2fpublic-2fimages-2f69f30783-1ca0-43e3-b6a0-43e4f48ec0e5-900x506-67408522151425921194835-20418597391313563339304.jpeg" alt="Movie 2">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://m.media-amazon.com/images/S/pv-target-images/509b02ad2b0330a90aa09942d9762c6eae296c32c17f5506e122003f8951d61d.jpg" alt="Movie 3">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://www.studyphim.vn/system/movies/8289/thumbnails/original/Emily%20in%20Paris%20-%20Season%201.jpg" alt="Movie 3">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://cdn.theplaylist.net/wp-content/uploads/2022/05/28121628/Heartstopper.jpg" alt="Movie 3">
+		        </div>
+		        <div class="movie-card">
+		            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnwMzF9_ao5O7OK6ObOQR7GpvnUyK-zBDj1g&s" alt="Movie 3">
+		        </div>
+		    </div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<p>Thực hiện bởi: Phan Nhật Lam Phương & Trần Nguyễn Hồng Ngọc - 12T1.</p>
+	    <p>Nguồn tham khảo: Netflix.</p>
+		<p>Nguồn ảnh: Google.</p>
+		<p>Góp ý cho chúng mình tại đây:</p>
+
+		<form id="feedbackForm">
+	        <input type="email" id="email" placeholder="Nhập email của bạn" required><br>
+	        <textarea id="feedback" placeholder="Nội dung góp ý" required></textarea>
+	        <button type="submit">Gửi góp ý</button>
+	    </form>
+
+	    <div class="notification" id="notification" style="display: none;">
+		    <p>Góp ý của bạn đã được ghi nhận, cảm ơn!</p>
+		</div>
+	</footer>
+
+	<div class="modal" id="videoModal" style="display: none;">
+	    <span class="close" onclick="closeModal()">&times;</span>
+	    <video width="100%" height="700px" controls>
+	        <source src="obs-intro.mp4" type="video/mp4">
+	    </video>
+	</div>
+
+	<script>
+	    function openModal() {
+	        document.getElementById("videoModal").style.display = "flex"; 
+	    }
+
+	    function closeModal() {
+	        document.getElementById("videoModal").style.display = "none"; 
+	    }
+
+	    function toggleSearchBox() {
+	        const searchBox = document.getElementById("searchBox");
+	        if (searchBox.style.display === "none" || searchBox.style.display === "") 
+	            searchBox.style.display = "block"; 
+	        else 
+	            searchBox.style.display = "none";	        
+	    }
+
+	    window.onclick = function(event) {
+	        const modal = document.getElementById("videoModal");
+	        if (event.target === modal) {
+	            closeModal();
+	        }
+	    }
+
+	    document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+		    event.preventDefault(); 
+		    const email = document.getElementById("email").value;
+		    const feedback = document.getElementById("feedback").value;
+		    
+		    console.log("Email:", email);
+		    console.log("Góp ý:", feedback);
+		    
+		    const notification = document.getElementById("notification");
+		    notification.style.display = "block"; 
+
+		    setTimeout(() => {
+		        notification.style.display = "none";
+		    }, 3000);
+		    
+		    this.reset();
+		});
+	</script>
+
+</body>
+</html>
